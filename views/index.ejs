@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+  
+  <form action="/add" method="POST">
+    <input type="text" name="taskName" placeholder="Task name" required />
+    <button type="submit">Add Task</button>
+  </form>
+  
+  <ul>
+    <% tasks.forEach(function(task) { %>
+      <li>
+        <%= task.name %>
+        <a href="/delete/<%= task.id %>">Delete</a>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
