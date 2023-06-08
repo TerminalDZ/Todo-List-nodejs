@@ -9,3 +9,6 @@ or edit file server.js
  ### database: 'todo_list'
   
   # start : node server.js
+## Require;  (express | mysql2 | ejs) 
+
+npm install express mysql2 ejs
